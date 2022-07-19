@@ -1,3 +1,4 @@
+// Reto 6
 const { Person } = require("./Person");
 
 let persona = new Person(175, 85);
