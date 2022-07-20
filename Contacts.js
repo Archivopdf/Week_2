@@ -1,8 +1,10 @@
 const { Person } = require("./Person");
 
 class Contacts {
+
     constructor()
-    contacs = [Person, Person, Person, Person];
+
+    Contacts = [Person, Person, Person, Person];
 
     printPersons() {
         for (let i = 0; i < contacs; i++) {
@@ -14,4 +16,4 @@ class Contacts {
     }
 }
 
-module.exports = { Contacts }
+module.exports = Contacts 
