@@ -19,11 +19,10 @@ class Person {
     }
     printAll() {
 
-        for (let properties in Person) {
-
-            console.log(properties + " - " + Person[properties]);
-
-        }
+        console.log("El nombre es - " + this.name);
+        console.log("La edad es - " + this.age);
+        console.log("La altura es - " + this.height);
+        console.log("El peso es - " + this.weight);
 
     }
 
@@ -33,11 +32,6 @@ class Person {
 
     }
 }
-
-
-
-
-
 
 let persona = new Person(179, 89);
 console.log(persona.printAll());
