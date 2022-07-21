@@ -34,7 +34,9 @@ class Person {
 }
 
 let persona = new Person(179, 89);
-console.log(persona.printAll());
+
+persona.printAll();
+
 //Reto3
 
 persona.yearOfBith = 2022 - persona.age;

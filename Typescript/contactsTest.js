@@ -1,0 +1,11 @@
+"use strict";
+exports.__esModule = true;
+var contacts_1 = require("./contacts");
+var Person_1 = require("./Person");
+var agenda = new contacts_1.contacts();
+agenda.setContact(new Person_1.Person("Juan", 33, "Calle del Anade"));
+var a = [];
+a.push(new Person_1.Person("Juah", 43, "Calle del Anade"));
+a.push(new Person_1.Person("Pepe", 23, "Calle del Anade"));
+agenda.setContacts(a);
+agenda.printCalendar();
