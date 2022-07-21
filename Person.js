@@ -19,10 +19,7 @@ class Person {
     }
     printAll() {
 
-        console.log("El nombre es - " + this.name);
-        console.log("La edad es - " + this.age);
-        console.log("La altura es - " + this.height);
-        console.log("El peso es - " + this.weight);
+        console.log("name - " + this.name + ", age -" + this.age + ", height -" + this.height + ", weight -" + this.weight);
 
     }
 
