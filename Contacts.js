@@ -2,18 +2,26 @@ const { Person } = require("./Person");
 
 class Contacts {
 
-    constructor()
+    constructor() {
 
-    Contacts = [Person, Person, Person, Person];
+        this.contactos = [];
+    }
+    setContact() {
 
-    printPersons() {
-        for (let i = 0; i < contacs; i++) {
-
-            console.log(contacs[i])
-
+        this.contactos.push(Person);
+    }
+    setContacts() {
+        for (let i = 0; i < this.contactos.length; i++) {
+            this.contactos.push(Person[i]);
         }
 
     }
+    printPersons() {
+        console.log(JSON.stringify(this.people));
+    }
+
 }
 
-module.exports = Contacts 
+
+
+module.exports = { Contacts } 

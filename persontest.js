@@ -1,7 +1,7 @@
 // Reto 6
 const { Person } = require("./Person");
 
-let persona = new Person(175, 85);
+let persona = new Person("Pedro", 33, 175, 85);
 
 console.log(persona);
 console.log(persona.calcIMC());

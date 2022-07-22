@@ -1,14 +1,12 @@
 // Reto1
 class Person {
 
-    constructor(altura, peso) {
+    constructor(name, age, altura, peso) {
 
-        this.name = "Paco";
-        this.age = 33;
+        this.name = name;
+        this.age = age;
         this.height = altura;
         this.weight = peso;
-
-
     }
 
     // Reto2
