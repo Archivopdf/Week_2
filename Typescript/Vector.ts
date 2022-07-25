@@ -17,15 +17,19 @@ export class Vector {
     }
 
     public add(v1: Vector): Vector {
-        let vSum = new Array(this.elements.length)
+
+        let vSum = new Vector(this.n, this.k);
+
         for (let i = 0; i < this.elements.length; i++) {
+
             vSum[i] = this.elements[i] + v1[i]
+
         }
         return vSum
     }
 
     public subs(v1: Vector): Vector {
-        let vSubs = new Array(this.elements.length);
+        let vSubs = new Vector(this.n, this.k);
         for (let i = 0; i < this.elements.length; i++) {
             vSubs[i] = this.elements[i] - v1[i];
         }
@@ -34,7 +38,7 @@ export class Vector {
     }
 
     public mult(v1: Vector): Vector {
-        let vMult = new Array(this.elements.length);
+        let vMult = new Vector(this.n, this.k);
         for (let i = 0; i < this.elements.length; i++) {
             vMult[i] = this.elements[i] * v1[i];
         }
@@ -42,7 +46,7 @@ export class Vector {
     }
 
     public multNumber(n: number): Vector {
-        let vMn = new Array(this.elements.length);
+        let vMn = new Vector(this.n, this.k);
         for (let i = 0; i < this.elements.length; i++) {
             vMn[i] = this.elements[i] * n;
         }
