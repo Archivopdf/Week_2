@@ -20,4 +20,7 @@ export class Person {
     public getAddress(): string {
         return this.address
     }
+    public setAddress(calle: string): void {
+        this.address = calle
+    }
 }
