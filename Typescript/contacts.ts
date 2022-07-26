@@ -26,7 +26,6 @@ export class contacts {
         for (let i = 0; i < this.people.length; i++) {
             console.log(this.people[i]);
 
-
         }
 
     }
