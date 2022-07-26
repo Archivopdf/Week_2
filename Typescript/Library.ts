@@ -14,7 +14,11 @@ export class Library {
         this.books.push(book);
     }
     public getBooks(): void {
-        console.log(JSON.stringify(this.books));
+        for (let i = 0; i < this.books.length; i++) {
+            console.log(this.books[i]);
+
+        }
+        // console.log(JSON.stringify(this.books));
 
     }
     public setAddress(address: string): void {
