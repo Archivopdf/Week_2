@@ -23,7 +23,11 @@ export class contacts {
 
     public printCalendar(): void {
 
-        console.log(JSON.stringify(this.people));
+        for (let i = 0; i < this.people.length; i++) {
+            console.log(this.people[i]);
+
+
+        }
 
     }
 
